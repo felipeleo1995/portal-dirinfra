@@ -11,12 +11,16 @@ import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
+
+
+
 import routes from "routes.js";
 
 import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 
-import bgImage from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
+//import bgImage from "assets/img/sidebar-2.jpg";
+import bgImage from "assets/img/bg2.jpg";
+import logo from "assets/img/icon_FAB.png";
 
 let ps;
 
@@ -34,7 +38,7 @@ const switchRoutes = (
       }
       return null;
     })}
-    <Redirect from="/admin" to="/admin/dashboard" />
+    <Redirect from="/admin" to="/admin/simulador" />
   </Switch>
 );
 
@@ -96,7 +100,7 @@ export default function Admin({ ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Creative Tim"}
+        logoText={"Portal DIRINFRA"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}
